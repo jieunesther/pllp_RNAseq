@@ -8,7 +8,7 @@ The analysis pipeline is divided into three sequential scripts. They are designe
 
 ### `01_DESeq2_DEGs_and_QC.R`
 **Description:** This script performs the primary differential expression analysis, quality control, and overlap visualization.
-* **Inputs:** Raw HTSeq count files (`.count`).
+* **Inputs:** Processed HTSeq count files (`.count`).
 * **Processing:**
   * Filters low-count genes and maps Ensembl IDs to Gene Symbols.
   * Normalizes data using DESeq2 (incorporating an interaction model: `~ genotype + diet + genotype:diet`) and performs variance stabilizing transformation (VST).
