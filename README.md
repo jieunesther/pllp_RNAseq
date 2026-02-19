@@ -1,4 +1,4 @@
-# pllp_RNAseq from the paper: "Genome wide transcriptional changes underly gradual and recurrent adaptation to protein malnutrition in zebrafish"
+# "Genome wide transcriptional changes underly gradual and recurrent adaptation to protein malnutrition in zebrafish" RNA sequencing data analysis
 RNAseq analysis scripts for 20 dpf EK, _pllp<sup>pd1116<sup>_, _pllp<sup>pd1245<sup>_ zebrafish larvae.
 
 ## Repository Overview
