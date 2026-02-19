@@ -1,5 +1,5 @@
 # pllp_RNAseq
-RNAseq analysis scripts for 20 dpf EK, pllp pd1116, pllp pd1245 zebrafish larvae.
+RNAseq analysis scripts for 20 dpf EK, _pllp<sup>pd1116<sup>_, _pllp<sup>pd1245<sup>_ zebrafish larvae.
 
 ## Repository Overview
 
