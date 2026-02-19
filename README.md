@@ -9,7 +9,8 @@ The analysis pipeline is divided into three sequential scripts. They are designe
 ### `01_DESeq2_DEGs_and_QC.R`
 **Description:** This script performs the primary differential expression analysis, quality control, and overlap visualization.
 * **Inputs:** Raw HTSeq count files (`.count`) and sample metadata.
-* **Processing:** * Filters low-count genes and maps Ensembl IDs to Gene Symbols.
+* **Processing:**
+  * Filters low-count genes and maps Ensembl IDs to Gene Symbols.
   * Normalizes data using DESeq2 (incorporating an interaction model: `~ genotype + diet + genotype:diet`) and performs variance stabilizing transformation (VST).
   * Extracts differentially expressed genes (DEGs) across main effects, condition-specific contrasts, and interaction effects.
   * Identifies unique/overlapping genes across conditions (e.g., potential compensation genes in specific mutants).
@@ -18,7 +19,8 @@ The analysis pipeline is divided into three sequential scripts. They are designe
 ### `02_Enrichment_Pathways.R`
 **Description:** Performs comprehensive functional enrichment analysis on the DEGs identified in Step 1.
 * **Inputs:** VST normalized counts and DESeq2 significant DEG lists (`.csv` files generated in Step 1).
-* **Processing:** * Maps Gene Symbols to Entrez IDs.
+* **Processing:**
+  * Maps Gene Symbols to Entrez IDs.
   * Runs Gene Ontology (GO - Biological Process) and KEGG pathway enrichment using `clusterProfiler`.
   * Utilizes a custom `ggplot2` function to generate highly readable dot plots with text-wrapping and strictly ordered factors.
 * **Outputs:** Generates aggregated PDFs of enrichment plots for main effects and dietary comparisons, and exports full GO/KEGG statistical results to CSV format.
@@ -26,7 +28,8 @@ The analysis pipeline is divided into three sequential scripts. They are designe
 ### `03_WGCNA_Network_Analysis.R`
 **Description:** Performs Weighted Gene Co-expression Network Analysis (WGCNA) to identify modules of highly correlated genes associated with specific genotypes or dietary traits.
 * **Inputs:** VST transformed counts and sample metadata (from Step 1).
-* **Processing:** * Filters the dataset for the top 25% highly variable genes (HVGs) to reduce noise.
+* **Processing:**
+  * Filters the dataset for the top 25% highly variable genes (HVGs) to reduce noise.
   * Selects soft-thresholding powers and constructs a signed hybrid co-expression network.
   * Correlates module eigengenes (MEs) with external traits (Genotype and Diet) and visualizes ME expression across conditions.
   * Performs targeted GO and KEGG enrichment on all identified modules.
