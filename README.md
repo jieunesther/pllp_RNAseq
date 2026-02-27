@@ -64,4 +64,4 @@ The following core packages (and their dependencies) are required to run the ana
 
 To run these scripts, you will need the raw HTSeq count files (`.count`).
 
-* The raw FASTQ files and the processed count matrices generated during this study are publicly available in the NCBI Gene Expression Omnibus (GEO) under accession number: **[GSExxxxxx: To be determined]**.
+* The raw FASTQ files and the processed count matrices generated during this study are publicly available in the NCBI Gene Expression Omnibus (GEO) under accession number: **[GSE320085]**.
