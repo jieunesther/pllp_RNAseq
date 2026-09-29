@@ -82,8 +82,8 @@ What is and is not expected to reproduce bit-for-bit:
 * **WGCNA (03)** — exact given the same input: 5,716 genes, power 18, 13 modules of
   identical size, 12 non-grey modules, 7 trait-significant modules, 13 starred cells.
 * **Gene symbols** — `01` names rows by `org.Dr.eg.db` symbol (Ensembl ID kept where
-  no symbol exists). Symbols for ~100 of the 22,863 genes differ between
-  `org.Dr.eg.db` releases. All curated gene lists in `curated_genes/` therefore carry
+  no symbol exists). Row names therefore depend on the `org.Dr.eg.db` release: relative
+  to the original run, 99 of 22,863 symbols differ with release 3.14 and 656 with 3.20. All curated gene lists in `curated_genes/` therefore carry
   Ensembl IDs, and every DE table carries an `ensembl_id` column, so the heatmap panels
   are unaffected. `results/dataset1/gene_annotation.csv` records the mapping used.
 * **GO / KEGG enrichment (02, 03)** — depends on the annotation release. GO term sets
