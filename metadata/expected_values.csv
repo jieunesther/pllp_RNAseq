@@ -1,0 +1,59 @@
+key,expected,note
+d1_raw_genes,32520,rows in HTSeq count files (Methods)
+d1_filtered_genes,22863,genes with >=10 counts in >=3 samples (Methods)
+d1_samples,18,
+DEG_HP_1116_vs_EK,356,Fig 2C
+DEG_HP_1116_vs_EK_up,158,Fig 2C
+DEG_HP_1116_vs_EK_down,198,Fig 2C
+DEG_HP_1245_vs_EK,284,Fig 2C
+DEG_HP_1245_vs_EK_up,115,Fig 2C
+DEG_HP_1245_vs_EK_down,169,Fig 2C
+DEG_HP_1245_vs_1116,757,Fig 2C
+DEG_HP_1245_vs_1116_up,371,Fig 2C
+DEG_HP_1245_vs_1116_down,386,Fig 2C
+DEG_LP_1116_vs_EK,489,Fig 2C
+DEG_LP_1116_vs_EK_up,200,Fig 2C
+DEG_LP_1116_vs_EK_down,289,Fig 2C
+DEG_LP_1245_vs_EK,1133,Fig 2C
+DEG_LP_1245_vs_EK_up,406,Fig 2C
+DEG_LP_1245_vs_EK_down,727,Fig 2C
+DEG_LP_1245_vs_1116,980,Fig 2C
+DEG_LP_1245_vs_1116_up,388,Fig 2C
+DEG_LP_1245_vs_1116_down,592,Fig 2C
+DEG_EK_HP_vs_LP,31,Fig 2C
+DEG_EK_HP_vs_LP_up,22,Fig 2C
+DEG_EK_HP_vs_LP_down,9,Fig 2C
+DEG_1116_HP_vs_LP,307,Fig 2C
+DEG_1116_HP_vs_LP_up,219,Fig 2C
+DEG_1116_HP_vs_LP_down,88,Fig 2C
+DEG_1245_HP_vs_LP,452,Fig 2C
+DEG_1245_HP_vs_LP_up,301,Fig 2C
+DEG_1245_HP_vs_LP_down,151,Fig 2C
+DEG_union_9_comparisons,2279,Fig 2A gene set
+venn_diet_all3,8,Fig S2A
+venn_diet_EK_and_1116,19,Results p.7 (61% of 31)
+venn_diet_EK_and_1245,11,Results p.7 (35% of 31)
+venn_diet_unique_1116,197,Results p.7
+venn_diet_unique_1245,350,Results p.7
+venn_HP_shared,47,Fig S2B
+venn_HP_unique_1245,237,Results p.7
+venn_LP_shared,155,Fig S2C
+venn_LP_unique_1245,978,Fig S2C
+PCA_PC1_pct,48,Fig 2B (top 500 variable VST genes)
+PCA_PC2_pct,25,Fig 2B
+wgcna_input_genes,5716,top 25% variable genes (Methods)
+wgcna_soft_power,18,Methods
+wgcna_n_modules_incl_grey,13,12 modules + grey
+wgcna_sig_modules,7,Results: Green Black Blue Red Turquoise Greenyellow Yellow
+wgcna_star_cells,13,Fig 2D legend draft (13 of 60 cells)
+fig2E_dots,35,Fig 2E (5 pathways x 7 modules)
+fig5A_terms,11,Fig 5A
+fig5B_terms,19,Fig 5B
+fig5G_genes,32,Fig 5G
+figS4A_genes,43,Fig S4A (muc2.2 filtered out)
+figS3B_genes,25,Fig S3B
+d2_samples,14,S7 (TLHYNJ)
+d2_curated_immune_sig,0,Methods: no curated immune gene padj<0.05 for pd1245 vs EK
+d2_PCA_PC1_pct,37,S7D (ANALYSIS_PLAN.md)
+d2_PCA_PC2_pct,23,S7D
+figS7E_genes,18,curated immune genes detected in dataset 2 (ANALYSIS_PLAN.md)

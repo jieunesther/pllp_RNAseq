@@ -1,0 +1,10 @@
+"Comparison","Total_DEGs","Upregulated","Downregulated"
+"HP: pd1116 vs EK",356,158,198
+"HP: pd1245 vs EK",284,115,169
+"HP: pd1245 vs pd1116",757,371,386
+"LP: pd1116 vs EK",489,200,289
+"LP: pd1245 vs EK",1133,406,727
+"LP: pd1245 vs pd1116",980,388,592
+"EK: HP vs LP",31,22,9
+"pd1116: HP vs LP",307,219,88
+"pd1245: HP vs LP",452,301,151

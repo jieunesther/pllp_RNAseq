@@ -1,0 +1,25 @@
+"Cluster","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"EK_HPvsLP_Down","dre04810","Regulation of actin cytoskeleton","2/3","302/7328",0.00494039808562186,0.0114206913385554,NA,"fgf19/fgf23",2
+"EK_HPvsLP_Down","dre00603","Glycosphingolipid biosynthesis - globo and isoglobo series","1/3","15/7328",0.00612910309906478,0.0114206913385554,NA,"fut9d",1
+"EK_HPvsLP_Down","dre04020","Calcium signaling pathway","2/3","349/7328",0.00657172459065083,0.0114206913385554,NA,"fgf19/fgf23",2
+"EK_HPvsLP_Down","dre04010","MAPK signaling pathway","2/3","394/7328",0.00834301713746973,0.0114206913385554,NA,"fgf19/fgf23",2
+"EK_HPvsLP_Down","dre00601","Glycosphingolipid biosynthesis - lacto and neolacto series","1/3","27/7328",0.0110143145331311,0.0114206913385554,NA,"fut9d",1
+"EK_HPvsLP_Down","dre00515","Mannose type O-glycan biosynthesis","1/3","28/7328",0.0114206913385554,0.0114206913385554,NA,"fut9d",1
+"1116_HPvsLP_Up","dre01040","Biosynthesis of unsaturated fatty acids","3/44","34/7328",0.00106144268727256,0.0384749790250737,0.0338424473039581,"tecra/acot21/fads2",3
+"1116_HPvsLP_Up","dre04514","Cell adhesion molecule (CAM) interaction","5/44","146/7328",0.00170288551623863,0.0384749790250737,0.0338424473039581,"mpz/cd99l2/si:busm1-266f07.2/cd226/selp",5
+"1116_HPvsLP_Up","dre00040","Pentose and glucuronate interconversions","3/44","42/7328",0.00196934238588855,0.0384749790250737,0.0338424473039581,"ugt5a2/akr1a1a/ugt5g2",3
+"1116_HPvsLP_Up","dre00053","Ascorbate and aldarate metabolism","3/44","43/7328",0.00210821802877116,0.0384749790250737,0.0338424473039581,"ugt5a2/akr1a1a/ugt5g2",3
+"1116_HPvsLP_Down","dre00603","Glycosphingolipid biosynthesis - globo and isoglobo series","2/18","15/7328",0.000587187389253809,0.0187899964561219,0.0173065756832702,"fut9d/gbgt1l6",2
+"1116_HPvsLP_Down","dre03320","PPAR signaling pathway","3/18","90/7328",0.00127920730979791,0.0204673169567666,0.0188514761443903,"pparab/cyp7a1/LOC100331214",3
+"1245_HPvsLP_Up","dre00100","Steroid biosynthesis","6/82","22/7328",1.05517949608299e-07,1.06573129104382e-05,8.1082213909535e-06,"hsd17b7/sc5d/sqlea/dhcr24/lss/msmo1",6
+"1245_HPvsLP_Up","dre00982","Drug metabolism - cytochrome P450","7/82","57/7328",2.85497727153366e-06,0.00014417635221245,0.000109691232011556,"gstt1b/ugt5a4/aox5/ugt1b2/adh8a/gsta.2/ugt2b5",7
+"1245_HPvsLP_Up","dre00980","Metabolism of xenobiotics by cytochrome P450","6/82","60/7328",5.04588545134321e-05,0.00169878143528555,0.00129245486999317,"gstt1b/ugt5a4/ugt1b2/adh8a/gsta.2/ugt2b5",6
+"1245_HPvsLP_Up","dre00040","Pentose and glucuronate interconversions","5/82","42/7328",9.53847123635977e-05,0.00216129263350122,0.00164433936681177,"ugt5a4/ugdh/akr1a1a/ugt1b2/ugt2b5",5
+"1245_HPvsLP_Up","dre00053","Ascorbate and aldarate metabolism","5/82","43/7328",0.000106994684826793,0.00216129263350122,0.00164433936681177,"ugt5a4/ugdh/akr1a1a/ugt1b2/ugt2b5",5
+"1245_HPvsLP_Up","dre04145","Phagosome","7/82","149/7328",0.00132638014120771,0.0223273990436631,0.0169869737382742,"tubb5/si:busm1-266f07.2/ctsl.1/c3a.2/calr3b/hbl1/hbl2",7
+"1245_HPvsLP_Up","dre00830","Retinol metabolism","5/82","77/7328",0.00163223878715176,0.0225223438686591,0.0171352902804806,"ugt5a4/aox5/ugt1b2/adh8a/ugt2b5",5
+"1245_HPvsLP_Up","dre00541","Biosynthesis of various nucleotide sugars","3/82","22/7328",0.00178394802920072,0.0225223438686591,0.0171352902804806,"cyb5r2/uap1l1/ugdh",3
+"1245_HPvsLP_Up","dre00983","Drug metabolism - other enzymes","5/82","86/7328",0.0026605299943915,0.029857058825949,0.0227156362094245,"gstt1b/ugt5a4/ugt1b2/gsta.2/ugt2b5",5
+"1245_HPvsLP_Up","dre00860","Porphyrin metabolism","4/82","58/7328",0.00390654316690847,0.0394560859857756,0.0300187001246651,"fthl28/ugt5a4/ugt1b2/ugt2b5",4
+"1245_HPvsLP_Down","dre00561","Glycerolipid metabolism","4/39","71/7328",0.000515229435763909,0.0252047751064213,0.0223421829198194,"lpin1a/LOC100331214/lipg/lpl",4
+"1245_HPvsLP_Down","dre04148","Efferocytosis","6/39","216/7328",0.00088437807390952,0.0252047751064213,0.0223421829198194,"abca1a/arg2/thbs1a/cebpb/odc1/ch25h",6

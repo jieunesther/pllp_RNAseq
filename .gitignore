@@ -1,0 +1,12 @@
+# Data downloaded from GEO (GSE320085) -- not tracked
+data/dataset1_htseq_counts/*
+data/dataset2_TLHYNJ/*
+!data/*/README.md
+# Generated outputs
+results/
+figures/
+# R / editor artefacts
+.Rhistory
+.RData
+.Rproj.user
+*.log

@@ -1,0 +1,4 @@
+"Cluster","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"1245_HP_Down","dre01040","Biosynthesis of unsaturated fatty acids","4/34","34/7328",1.62353888155371e-05,0.000746827885514707,0.000649415552621484,"tecra/fads2/elovl2/scd",4
+"1245_HP_Down","dre01212","Fatty acid metabolism","4/34","71/7328",0.000301299622806304,0.006929891324545,0.00602599245612609,"tecra/fads2/elovl2/scd",4
+"1245_HP_Down","dre04820","Cytoskeleton in muscle cells","6/34","303/7328",0.00240106748950596,0.0368163681724248,0.0320142331934129,"myha/tnni2a.3/myhz2/mybpc2a/bgna/ankrd1a",6

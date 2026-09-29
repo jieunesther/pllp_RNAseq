@@ -1,0 +1,45 @@
+group	query_symbol	ensembl_gene_id	vst_rowname
+Absorptive Enterocytes	pck1	ENSDARG00000013522	pck1
+Absorptive Enterocytes	cldn15la	ENSDARG00000016081	cldn15la
+Absorptive Enterocytes	enpep	ENSDARG00000057064	enpep
+Absorptive Enterocytes	cyb5a	ENSDARG00000098589	cyb5a
+Absorptive Enterocytes	slc5a1	ENSDARG00000013871	slc5a1
+Absorptive Enterocytes	fabp2	ENSDARG00000006427	fabp2
+Absorptive Enterocytes	rbp2a	ENSDARG00000070038	rbp2a
+Absorptive Enterocytes	fabp1b.1	ENSDARG00000059227	fabp1b.1
+Absorptive Enterocytes	treh	ENSDARG00000077911	treh
+Absorptive Enterocytes	fads2	ENSDARG00000019532	fads2
+Absorptive Enterocytes	mbl2	ENSDARG00000068220	mbl2
+Absorptive Enterocytes	elovl2	ENSDARG00000045414	elovl2
+Absorptive Enterocytes	mep1a.1	ENSDARG00000029747	mep1a.1
+Absorptive Enterocytes	mogat2	ENSDARG00000019228	mogat2
+Absorptive Enterocytes	chia.1	ENSDARG00000100635	chia.1
+LREs	lrp2b	ENSDARG00000007906	lrp2b
+LREs	lrp2a	ENSDARG00000102506	lrp2a
+LREs	fabp6	ENSDARG00000044566	fabp6
+LREs	lamp2	ENSDARG00000014914	lamp2
+LREs	dab2	ENSDARG00000031761	dab2
+LREs	amn	ENSDARG00000062947	amn
+LREs	cubn	ENSDARG00000087013	cubn
+Enteroendocrine Cells	pyyb	ENSDARG00000035832	pyyb
+Enteroendocrine Cells	cckb	ENSDARG00000100052	cckb
+Enteroendocrine Cells	gcga	ENSDARG00000079296	gcga
+Enteroendocrine Cells	scg3	ENSDARG00000086288	scg3
+Enteroendocrine Cells	ghrl	ENSDARG00000054239	ghrl
+Enteroendocrine Cells	scg2b	ENSDARG00000038574	scg2b
+Enteroendocrine Cells	pax6b	ENSDARG00000045936	pax6b
+Enteroendocrine Cells	neurod1	ENSDARG00000019566	neurod1
+Enteroendocrine Cells	tph1b	ENSDARG00000036082	tph1b
+Enteroendocrine Cells	nkx2.2a	ENSDARG00000053298	nkx2.2a
+Enteroendocrine Cells	gck	ENSDARG00000068006	gck
+Enteroendocrine Cells	pcsk1	ENSDARG00000002600	pcsk1
+Enteroendocrine Cells	scg5	ENSDARG00000032126	LOC100330746
+Goblet Cells	agr2	ENSDARG00000070480	agr2
+Goblet Cells	spry2	ENSDARG00000078308	spry2
+Goblet Cells	pou2f3	ENSDARG00000052387	pou2f3
+Goblet Cells	spdef	ENSDARG00000029930	spdef
+Goblet Cells	galnt7	ENSDARG00000057303	galnt7
+Mucins	muc2.2	ENSDARG00000078994	NA
+Mucins	muc5.1	ENSDARG00000070331	muc5.1
+Mucins	muc5.2	ENSDARG00000058556	muc5.2
+Mucins	muc5.3	ENSDARG00000099470	LOC100147849

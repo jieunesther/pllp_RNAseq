@@ -1,0 +1,25 @@
+"Cluster","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"1116_HP_Up","GO:0006955","immune response","9/66","430/15984",6.45747716197691e-05,0.0278963013397402,0.0268495103050619,"tapbp.2/mfap4.11/nlrp1/slc15a2/si:ch211-66k16.27/sh2d1ab/ccl36.1/ifi44a1/tapbp.1",9
+"1116_HP_Down","GO:0009617","response to bacterium","6/78","131/15984",4.28016975742919e-05,0.0176342994006082,0.0176162776332085,"saa/mpx/irg1l/leap2/gpr84/hist1h2a3",6
+"1245_HP_Down","GO:0007601","visual perception","8/99","155/15984",5.29515278603321e-06,0.00138250174825505,0.00121731289002981,"crygm1/crybb2/crygm2e/crygm2a/opn1mw2/crygm4/opn1lw1/opn1mw3",8
+"1245_HP_Down","GO:0050953","sensory perception of light stimulus","8/99","160/15984",6.69445394723378e-06,0.00138250174825505,0.00121731289002981,"crygm1/crybb2/crygm2e/crygm2a/opn1mw2/crygm4/opn1lw1/opn1mw3",8
+"1245_HP_Down","GO:0030198","extracellular matrix organization","8/99","175/15984",1.29055281414774e-05,0.00138250174825505,0.00121731289002981,"col8a1b/mmp13b/fbln5/otol1b/otol1a/col10a1b/mfap4.10/mfap4.7",8
+"1245_HP_Down","GO:0043062","extracellular structure organization","8/99","175/15984",1.29055281414774e-05,0.00138250174825505,0.00121731289002981,"col8a1b/mmp13b/fbln5/otol1b/otol1a/col10a1b/mfap4.10/mfap4.7",8
+"1245_HP_Down","GO:0045229","external encapsulating structure organization","8/99","176/15984",1.34517722272454e-05,0.00138250174825505,0.00121731289002981,"col8a1b/mmp13b/fbln5/otol1b/otol1a/col10a1b/mfap4.10/mfap4.7",8
+"1245_HP_Down","GO:0010466","negative regulation of peptidase activity","6/99","85/15984",1.4277126488004e-05,0.00138250174825505,0.00121731289002981,"ahsg1/spink2.7/ahsg2/timp4.2/spink2.4/spink2.5",6
+"1245_HP_Down","GO:0098542","defense response to other organism","9/99","279/15984",5.80514365902943e-05,0.00374754273988456,0.00329976586934305,"slc15a2/coch/pglyrp6/ccl34b.9/c7b/rnasel2/si:ch211-240l19.8/mfap4.10/mfap4.7",9
+"1245_HP_Down","GO:0006955","immune response","11/99","430/15984",7.06158392347877e-05,0.00378979222952662,0.00333696715925345,"slc15a2/ifi44a5/coch/fgl1/ccl34b.9/c3a.4/c7b/si:ch211-240l19.8/mfap4.10/mhc1zja/mfap4.7",11
+"1245_HP_Down","GO:0051346","negative regulation of hydrolase activity","6/99","113/15984",7.17516601115196e-05,0.00378979222952662,0.00333696715925345,"ahsg1/spink2.7/ahsg2/timp4.2/spink2.4/spink2.5",6
+"1245_HP_Down","GO:0009410","response to xenobiotic stimulus","5/99","85/15984",0.000182492627151856,0.0062955874366555,0.00554335627179015,"cyp2k8/adh8a/cyp2x8/cyp19a1a/hmox1a",5
+"1245_HP_Down","GO:0006026","aminoglycan catabolic process","3/99","21/15984",0.000282674605162579,0.0087234596753015,0.00768113307762755,"pglyrp6/spam1/chia.4",3
+"1245_HP_Down","GO:0044419","biological process involved in interspecies interaction between organisms","9/99","364/15984",0.000425749193865502,0.0103261686227777,0.00909234160824339,"slc15a2/coch/pglyrp6/ccl34b.9/c7b/rnasel2/si:ch211-240l19.8/mfap4.10/mfap4.7",9
+"1245_HP_Down","GO:0002088","lens development in camera-type eye","5/99","102/15984",0.000426554297670678,0.0103261686227777,0.00909234160824339,"crygm1/crybb2/crygm2e/crygm2a/crygm4",5
+"1245_HP_Down","GO:0006636","unsaturated fatty acid biosynthetic process","3/99","26/15984",0.000540322847420238,0.011626947198191,0.0102376960563835,"fads2/elovl2/scd",3
+"1245_HP_Down","GO:0002252","immune effector process","5/99","115/15984",0.000737809251232662,0.0147816267229716,0.0130154372449755,"c3a.4/c7b/si:ch211-240l19.8/mfap4.10/mfap4.7",5
+"1245_HP_Down","GO:0006952","defense response","9/99","398/15984",0.0008072289653838,0.0156333342962663,0.0137653781465448,"slc15a2/coch/pglyrp6/ccl34b.9/c7b/rnasel2/si:ch211-240l19.8/mfap4.10/mfap4.7",9
+"1245_HP_Down","GO:0008210","estrogen metabolic process","2/99","10/15984",0.00165449827320848,0.0267017637981701,0.0235112912508573,"cyp19a1a/zgc:109982",2
+"1245_HP_Down","GO:0120178","steroid hormone biosynthetic process","2/99","11/15984",0.00201401273062036,0.0294758012923981,0.0259538715972561,"cyp19a1a/zgc:109982",2
+"1245_HP_Down","GO:0007602","phototransduction","3/99","41/15984",0.00207132714377237,0.0294758012923981,0.0259538715972561,"opn1mw2/opn1lw1/opn1mw3",3
+"1245_HP_Down","GO:0034587","piRNA metabolic process","2/99","14/15984",0.00329217561954813,0.042505645221277,0.0374268386222314,"exd1/piwil1",2
+"1245_HP_Down","GO:0051606","detection of stimulus","4/99","100/15984",0.00344711255524649,0.0435385303173524,0.0383363089668145,"opn1mw2/pglyrp6/opn1lw1/opn1mw3",4
+"1245_HP_Down","GO:0071482","cellular response to light stimulus","3/99","50/15984",0.00365839582907202,0.044281832847726,0.0389907976519518,"opn1mw2/opn1lw1/opn1mw3",3
