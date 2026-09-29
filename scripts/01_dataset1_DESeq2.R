@@ -65,9 +65,12 @@ if (length(matrix_file)) {
   count_data <- read.csv(matrix_file[1], row.names = 1, check.names = FALSE)
 } else {
   count_data <- NULL
-  for (id in sample_info$sample_id) {
-    f <- files[grepl(id, basename(files), fixed = TRUE) & grepl("count", basename(files))]
-    if (length(f) != 1) stop("Expected exactly one count file for ", id, " in ", count_dir,
+  for (i in seq_len(nrow(sample_info))) {
+    id <- sample_info$sample_id[i]; gsm <- sample_info$gsm[i]
+    # match by GEO accession (GSM9533663_...) or by sample title (EK_HP_1_S1)
+    f <- files[!grepl("README", basename(files)) &
+               (grepl(gsm, basename(files), fixed = TRUE) | grepl(id, basename(files), fixed = TRUE))]
+    if (length(f) != 1) stop("Expected exactly one count file for ", id, " (", gsm, ") in ", count_dir,
                              " (found ", length(f), "). See data/dataset1_htseq_counts/README.md")
     kv(id, basename(f))
     d <- read_count_file(f, id)

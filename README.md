@@ -14,19 +14,36 @@ data deposited in GEO **GSE320085**. Two independent bulk RNA-seq datasets are a
 | GEO input used by these scripts | one HTSeq count file per sample | `TLHYNJ-expression-matrix.tsv` (`*_count` columns) |
 | Paper panels | Fig 2A–E, 3A–B, 5A–B, 5G, S2A–D, S3A–B, S4A; S1–S2 Tables | Fig S7D–E |
 
-## 1. Set up
+## 1. Which GEO samples belong to which dataset
+
+GSE320085 holds **32 samples** from the two experiments. The GEO sample title tells
+them apart; `metadata/GEO_GSE320085_samples.csv` lists every GSM with its dataset and
+the scripts that use it.
+
+| GEO samples | Title pattern | Dataset | Used by |
+|---|---|---|---|
+| GSM9533663 – GSM9533680 (18) | `EK_HP_1_S1` … `pd1245_LP_25_S18` (genotype_diet_tank_Sn) | **1** — EK / *pd1116* / *pd1245* × HP / LP | `01` – `03`, `05` – `09` (Fig 2, 3, 5, S2–S4; S1–S2 Tables) |
+| GSM9930323 – GSM9930336 (14) | `1_EK_HP1_FigureS7RNAseq` … `14_pllp1245_LP4_FigureS7RNAseq` (number_genotype_dietRep) | **2** — EK vs adapted F8 *pd1245* × HP / LP | `04`, `10` (Fig S7D–E) |
+
+In dataset 2 titles `pllp1245` is the *pd1245* allele (labelled `pd1245` in the
+scripts), and the leading number is the sample number used as `TLHYNJ_<n>` in the
+count matrix and in `metadata/dataset2_samples.csv`.
+
+## 2. Set up
 
 ```bash
 git clone https://github.com/jieunesther/pllp_RNAseq.git
 cd pllp_RNAseq
-# dataset 1: the 18 HTSeq count files (may be .gz, may carry a GSM prefix)
+# dataset 1: the 18 HTSeq count files of GSM9533663-GSM9533680
+#            (as downloaded: may be .gz, may carry the GSM prefix)
 #   -> data/dataset1_htseq_counts/
-# dataset 2: TLHYNJ-expression-matrix.tsv
+# dataset 2: the featureCounts matrix of GSM9930323-GSM9930336
+#            (*expression-matrix.tsv)
 #   -> data/dataset2_TLHYNJ/
 ```
-Each `data/*/README.md` states exactly what the folder expects. File names must contain
-the `sample_id` values listed in `metadata/dataset1_samples.csv` /
-`metadata/dataset2_samples.csv`.
+Each `data/*/README.md` states exactly what the folder expects. Dataset-1 files are
+matched to `metadata/dataset1_samples.csv` by GSM accession or sample title; dataset-2
+matrix columns are matched to `metadata/dataset2_samples.csv` by sample number.
 
 **R packages** (R ≥ 4.4; Bioconductor 3.20 was used for the runs recorded here):
 `DESeq2`, `org.Dr.eg.db`, `AnnotationDbi`, `clusterProfiler`, `enrichplot`, `WGCNA`,
@@ -39,7 +56,7 @@ BiocManager::install(c("DESeq2", "org.Dr.eg.db", "clusterProfiler", "enrichplot"
 ```
 `02` and `03` query the KEGG REST API, so they need internet access.
 
-## 2. Run
+## 3. Run
 
 ```bash
 bash run_all.sh                 # everything, ~15 min on one CPU
@@ -66,7 +83,7 @@ Every script prints sanity checks (input dimensions, group composition, filter
 counts, spot-check values), verifies that its output files exist and are non-empty,
 and writes `results/sessionInfo_<script>.txt`.
 
-## 3. Reproducibility checks
+## 4. Reproducibility checks
 
 `metadata/expected_values.csv` lists the numbers printed in the paper (DEG counts per
 contrast, overlaps, PCA variance, WGCNA gene number / power / module counts, panel
@@ -103,7 +120,7 @@ What is and is not expected to reproduce bit-for-bit:
   35 pathways (Cadherin signaling and Efferocytosis enter; Necroptosis and FoxO signaling
   leave). All other panels and every number in the paper reproduce exactly.
 
-## 4. Methods summary (as implemented)
+## 5. Methods summary (as implemented)
 
 * Filter: genes with ≥ 10 counts in ≥ 3 samples (dataset 1: 32,520 → 22,863).
 * DESeq2 (Wald): full model `~ genotype + diet + genotype:diet` for VST (blind = FALSE),
@@ -123,19 +140,19 @@ What is and is not expected to reproduce bit-for-bit:
   samples, averaged per genotype × diet group; markers from the DESeq2 contrasts
   (`*` EK vs *pd1116*, `#` *pd1116* vs *pd1245*, padj < 0.05, within diet).
 
-## 5. Repository layout
+## 6. Repository layout
 
 ```
 R/            common.R (paths, checks), fig_style.R (journal style: Arial 8-12 pt, ≤ 7.5 × 8.75 in, 600 dpi TIFF)
 scripts/      01-10 as above
-metadata/     sample sheets, expected_values.csv
+metadata/     GEO_GSE320085_samples.csv (GSM -> dataset -> script), per-dataset sample sheets, expected_values.csv
 curated_genes/  gene lists for Fig 3A, 3B, 5G, S3B, S4A (group, symbol, Ensembl ID)
 published_results/  enrichment tables exactly as plotted in the paper (Feb 2026 run)
 legacy_v1.0.0/  the three scripts of the first release (kept for the record; superseded)
 data/, results/, figures/   not tracked (inputs from GEO, generated outputs)
 ```
 
-## 6. Data availability
+## 7. Data availability
 
 Raw FASTQ files and the processed count files for both datasets: GEO **GSE320085**.
 Code: this repository, archived at Zenodo (concept DOI 10.5281/zenodo.18707422).
