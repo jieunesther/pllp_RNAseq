@@ -31,19 +31,25 @@ count matrix and in `metadata/dataset2_samples.csv`.
 
 ## 2. Set up
 
+GEO GSE320085 (public since 30 July 2026) provides three supplementary files. Download
+them from the series page and place them as follows:
+
+| GEO file | Contents | Put in |
+|---|---|---|
+| `GSE320085_RAW.tar` | the 18 per-sample HTSeq count files of dataset 1 (`GSM95336xx_<title>.count.gz` or similar) | untar into `data/dataset1_htseq_counts/` |
+| `GSE320085_TLHYNJ-expression-matrix.tsv.gz` | featureCounts matrix of dataset 2 (`TLHYNJ_<n>_count` columns) | `data/dataset2_TLHYNJ/` (leave gzipped) |
+| `GSE320085_vst_transformed_counts.csv.gz` | dataset-1 VST matrix from the original run | not needed; script 01 recomputes it |
+
 ```bash
 git clone https://github.com/jieunesther/pllp_RNAseq.git
 cd pllp_RNAseq
-# dataset 1: the 18 HTSeq count files of GSM9533663-GSM9533680
-#            (as downloaded: may be .gz, may carry the GSM prefix)
-#   -> data/dataset1_htseq_counts/
-# dataset 2: the featureCounts matrix of GSM9930323-GSM9930336
-#            (*expression-matrix.tsv)
-#   -> data/dataset2_TLHYNJ/
+tar -xf /path/to/GSE320085_RAW.tar -C data/dataset1_htseq_counts/
+cp /path/to/GSE320085_TLHYNJ-expression-matrix.tsv.gz data/dataset2_TLHYNJ/
 ```
 Each `data/*/README.md` states exactly what the folder expects. Dataset-1 files are
-matched to `metadata/dataset1_samples.csv` by GSM accession or sample title; dataset-2
-matrix columns are matched to `metadata/dataset2_samples.csv` by sample number.
+matched to `metadata/dataset1_samples.csv` by GSM accession or sample title (gzipped
+files are read directly); dataset-2 matrix columns are matched to
+`metadata/dataset2_samples.csv` by sample number.
 
 **R packages** (R ≥ 4.4; Bioconductor 3.20 was used for the runs recorded here):
 `DESeq2`, `org.Dr.eg.db`, `AnnotationDbi`, `clusterProfiler`, `enrichplot`, `WGCNA`,
